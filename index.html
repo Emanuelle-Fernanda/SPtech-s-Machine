@@ -1,0 +1,62 @@
+<!-- Criado por Marise Miranda | 2017.1 -->
+<!-- Adaptado por Matheus Matos | 2025.1 -->
+
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Um site sobre a calculadora conversora de bases com o tema de Demon Slayer!">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="https://freepnglogo.com/images/all_img/1707838647demon-slayer-logo-transparent.png"
+        type="image/x-icon">
+    <title>Calculadora Slayer</title>
+</head>
+
+<body>
+    <header>
+        <aside class="main-logo">
+            <img src="./assets/img/logo-demon-slayer.png" alt="demon-slayer-logo">
+        </aside>
+    </header>
+
+    <main>
+        <div class="main-calculadora">
+            <section class="main-machine">
+                <h1 class="titulo" id="titulo-sptech">SPTecher's Machine</h1>
+
+                <h3 class="text_input">Digite um número decimal:</h3>
+                <input id="demo1" type="text" placeholder="Ex: 42">
+
+                <button class="button_conversao" onclick="converter()">Converter</button>
+
+                <div class="Resultados">
+                    <div>
+                        <p>Octal:</p>
+                        <div id="demo2" class="resultados-convertidos"></div>
+                    </div>
+
+                    <div>
+                        <p>Hexadecimal:</p>
+                        <div id="demo3" class="resultados-convertidos"></div>
+                    </div>
+
+                    <div>
+                        <p>Binário:</p>
+                        <div id="demo4" class="resultados-convertidos"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="conteudo-fundo">
+                <img src="./assets/background-image.webp" alt="Calculadora Slayer Imagem de Fundo">
+            </section>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
