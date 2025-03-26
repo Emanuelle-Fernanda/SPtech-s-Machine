@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    overflow: hidden; /* Evita a barra de rolagem */
+    background-image: url('img/japan-background-digital-art.jpg');
+    background-size: cover; /* Faz a imagem cobrir toda a página */
+    background-repeat: no-repeat; /* Evita repetição da imagem */  
+    font-family: Arial;
+}
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 0; /* Remove o espaço entre as divs */
+    height: 100vh; /* Faz a altura ocupar toda a tela */
+    margin: 0; /* Remove margens externas */
+    padding: 0; /* Remove preenchimentos */
+}
+
+.div1 {
+    width: 400px; /* Define a largura fixa igual à div machine */
+    height: 395px; /* Ajusta a altura automaticamente */
+}
+
+.div1 img {
+    width: 100%; /* Faz a imagem ocupar toda a largura da div */
+    height: 100%; /* Faz a imagem ocupar toda a altura da div */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorcer */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.machine {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white;
+    text-align: center;
+    width: 400px; /* Define a largura fixa da div machine */
+    height: 395px;
+    background-color: rgba(168, 33, 82, 0.571);
+    flex-shrink: 0; /* Garante que a largura não seja reduzida */
+}
+
+.titulo{
+
+    padding-top: 10%;
+    margin: 0;
+}
+.text_input{
+    margin-bottom: 2%;
+    display: flex;
+    margin-left: 14%;
+}
+
+input{
+    width: 70%;
+    height: 8%;
+}
+
+button{
+    width: 50%;
+    height: 35px;
+    border-radius: 5px;
+    margin-top: 5%;
+    border: none;
+    background-color: rgb(255, 174, 11);
+    color: white;
+    font-size: medium;
+}
+
+.Resultados{
+    
+    height: 30%;
+    display: flex; /* Ativa o layout flexbox */
+    justify-content: space-around; /* Espaça os textos uniformemente */
+    align-items: center; /* Alinha os textos verticalmente */
+    padding-left: 30px; /* Adiciona um pouco de espaço interno */
+    gap: 10px; /* Espaço entre os textos */
+}
