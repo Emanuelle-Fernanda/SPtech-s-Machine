@@ -11,49 +11,48 @@
     <title>SPTecher's Machine</title>
 </head>
 
-<body >
- 
-    <div class="container">
-        <div class="div1">
-            <img src="img/demon_slayer_4k_wallpaper_by_vilex45_dfwffqf.png" alt="">
+<body>
+    <header>
+        <section class="conteudo-fundo">
+            <video loop autoplay muted src="./assets/demon-slayer-background.mp4"></video>
+        </section>
+    </header>
+
+    <main>
+        <div class="main-calculadora">
+            <section class="main-machine">
+                <h1 class="titulo" id="titulo-sptech">SPTecher's Machine</h1>
+
+                <h3 class="text_input">Digite um número decimal:</h3>
+                <input id="demo1" type="text" placeholder="Ex: 42">
+
+                <button class="button_conversao" onclick="converter()">Converter</button>
+
+                <div class="Resultados">
+                    <div>
+                        <p>Octal:</p>
+                        <div id="demo2" class="resultados-convertidos"></div>
+                    </div>
+
+                    <div>
+                        <p>Hexadecimal:</p>
+                        <div id="demo3" class="resultados-convertidos"></div>
+                    </div>
+
+                    <div>
+                        <p>Binário:</p>
+                        <div id="demo4" class="resultados-convertidos"></div>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="main-logo">
+                <img src="./assets/img/logo-demon-slayer.png" alt="demon-slayer-logo">
+            </aside>
         </div>
+    </main>
 
-        <div class="machine">
-            <h1 class="titulo">SPTecher's Machine</h1>
-    
-            <h3 class="text_input">Digite um número decimal:</h3>
-            <input id="demo1" type="text" placeholder="Ex: 42">
-            <br><br>
-    
-            <button class="button_conversao" onclick="converter()">Converter</button>
-            
-            <div class="Resultados">
-                <p>Octal:
-                    <div id="demo2"></div>
-                    </p>
-                    <p>Hexadecimal:
-                    <div id="demo3"></div>
-                    </p>
-                    <p>Binário:
-                    <div id="demo4"></div>
-                    </p>
-            </div>
-          
-        </div>
-    </div>
-   
-       
-    
-
-    <script>
-        function converter() {
-            var decimal = Number(demo1.value);
-
-            demo2.innerHTML = decimal.toString(8);
-            demo3.innerHTML = decimal.toString(16);
-            demo4.innerHTML = decimal.toString(2);
-        }
-    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
